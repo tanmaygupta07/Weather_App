@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+body {
+    background-image: url("https://images.unsplash.com/photo-1483728642387-6c3bdd6c93e5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2076&q=80");
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.weather-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    max-width: 500px;
+    height: 50%;
+    padding: 2.5rem;
+    border-radius: 30px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+::placeholder {
+    color: ghostwhite;
+}
+
+input {
+    background-color: #575757;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    padding: 1rem;
+    min-width: 20rem;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    box-shadow: 10px 6px 12px rgba(0, 0, 0, 0.4);
+    transition: background-color 0.3s ease-in-out;
+
+    &:hover {
+        background-color: #65747b;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
+
+#main h1{
+    margin-top: 25%;
+    transform: translateY(-15px);
+}
+
+.weather h3{
+    font-size: 2rem;
+    margin: 30px 0 0;
+    font-weight: 700;
+}
+
+.weather h2{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+.weather p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin: 0;
+    padding: 5px;
+}
+
+.more-info p{
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+@media (max-width: 480px){
+    .weather-card{
+        max-width: 320px;
+        width: 100%;
+        padding: 1rem;
+        height: 60%;
+    }
+
+    input{
+        min-width: 15rem;
+        padding: 0.5rem
+    } ;
+}
